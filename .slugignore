@@ -1,3 +1,7 @@
 *.psd
 *.pdf
 /test
+.git
+.gitignore
+README.md
+
