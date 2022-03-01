@@ -19,7 +19,7 @@ from dash import dcc,html,Input,Output, dependencies,State
 from app import app
 import callbacks
 
-
+server=app.server
 #importamos los layouts ya prefabricados (por mi) en funciones y variables en otro archivo
 from layouts import * 
 
