@@ -180,7 +180,6 @@ def dropdown(datos):
               Input("color","value"))
 
 def create_plots(y,x,datos,typ,log,color):
-    print(y,x,typ,log,color)
     if "logx" in log:
         log_x=True
     else:

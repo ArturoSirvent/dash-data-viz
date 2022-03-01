@@ -22,7 +22,7 @@ page1 = html.Div([
             html.Div([
                 #Añadimos un titulo de encabezado
                 html.H1("Visualización interactiva de datos",style={"text-align":"center",'color': 'black'}),
-                dcc.Dropdown(options=["Link","Upload file"],value="Link",id="id_upload_select"),
+                dcc.Dropdown(options=["Link","Upload file"],id="id_upload_select"),
                 html.Div(id="id_upload_type"),
                 html.Div([html.Div(id="store_link"),html.Div(id="store_file"),html.Div(id="store_file_name"),html.Div(id="store_file_name2")]),
                 html.Div(id="id_select_columns"),
