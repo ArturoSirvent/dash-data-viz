@@ -40,7 +40,6 @@ app.layout=dbc.Container([
 @app.callback(Output("page-content","children"),
               Input("url","pathname"))
 def display_page(pathname):
-    print(pathname)
     if pathname == '/page1/':
          return page1
     #elif pathname == '/page2/':
