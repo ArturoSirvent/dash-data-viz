@@ -47,13 +47,6 @@ def display_page(pathname):
     else:
         return '404' 
         
-#una funcion que te manda a page 1 si vas al root
-@app.callback(Output("url","pathname"),
-              Input("url","pathname"))
-def change_page(pathname):
-    if pathname == '':
-         return '/page1/'
-
 
 
 if __name__ == '__main__':
