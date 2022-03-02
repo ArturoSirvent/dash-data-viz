@@ -32,7 +32,7 @@ def parse_contents(contents, filename, date):
             df = pd.read_csv(io.BytesIO(decoded),sep=None,engine='python')
     except Exception as e:
         print(e)
-    return df
+    return pd.to_numeric(df)
 
 
 
@@ -45,7 +45,7 @@ def parse_contents(contents, filename, date):
 def read_link(link):
     if link:
         try:
-            df=pd.read_csv(link)
+            df=pd.to_numeric(pd.read_csv(link))
             nam=os.path.basename(link)
             return dcc.Store(id="datos",data=df.to_dict('records')),dcc.Store(id="nombre",data={"nombre":nam})
         except Exception as e:
